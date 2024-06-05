@@ -11,7 +11,7 @@ import ContactAdder from "./components/ContactAdder";
 const App = () => {
   const contacts = [
     { name: "Sandy", phone: "9846029184", address: "Nepal" },
-    { name: "Dev", phone: "985602210i", address: "India" },
+    { name: "Dev", phone: "985602210", address: "India" },
     { name: "Chris", phone: "9856733212", address: "Bhutan" }
   ];
   return (
