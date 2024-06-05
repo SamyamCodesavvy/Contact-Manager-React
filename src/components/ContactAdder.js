@@ -6,8 +6,7 @@ const ContactAdder = () => {
 
   const onClickHandler = () => {
     const contactData = { name: name, number: mobile, location: location};
-
-    console.log("Clicked!");
+    console.log(contactData);
   };
   return (
     <>

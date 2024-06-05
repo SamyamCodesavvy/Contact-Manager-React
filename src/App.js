@@ -12,7 +12,7 @@ const App = () => {
   const contacts = [
     { name: "Sandy", phone: "9356789920", address: "Nepal" },
     { name: "Dev", phone: "9845675501", address: "India" },
-    { name: "Chris", phone: "9856733212", address: "Bhutan" },
+    { name: "Chris", phone: "9856733212", address: "Bhutan" }
   ];
   return (
     <>
@@ -24,9 +24,9 @@ const App = () => {
         {contacts.map(data=>(
           <Contact data = {data}></Contact>
         ))}
-        <Contact data={contacts[0]} />
+        {/* /* <Contact data={contacts[0]} />
         <Contact data={contacts[1]} />
-        <Contact data={contacts[2]} />
+      <Contact data={contacts[2]} /> */}
       </div>
     </>
   );
