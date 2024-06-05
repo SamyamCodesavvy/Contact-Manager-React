@@ -24,9 +24,6 @@ const App = () => {
         {contacts.map(data=>(
           <Contact data = {data}></Contact>
         ))}
-        {/* /* <Contact data={contacts[0]} />
-        <Contact data={contacts[1]} />
-      <Contact data={contacts[2]} /> */}
       </div>
     </>
   );
