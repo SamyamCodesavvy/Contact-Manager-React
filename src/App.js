@@ -9,14 +9,15 @@ import Contact from "./components/Contact";
 import "./styles/app.css";
 import ContactAdder from "./components/ContactAdder";
 const App = () => {
-  const addContactData = (contactData) => {
-    console.log(contactData);
-  };
   const contacts = [
     { name: "Sandy", phone: "9846029184", address: "Nepal" },
     { name: "Dev", phone: "9856022105", address: "India" },
     { name: "Chris", phone: "9856733212", address: "Bhutan" }
   ];
+  const addContactData = (contactData) => {
+    contacts.push(contactData);
+    console.log(contacts);
+  };
   return (
     <>
       <div className="contact_adder">
