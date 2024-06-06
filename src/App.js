@@ -9,6 +9,9 @@ import Contact from "./components/Contact";
 import "./styles/app.css";
 import ContactAdder from "./components/ContactAdder";
 const App = () => {
+  const addContactData = () => {
+    alert("Parent called.");
+  };
   const contacts = [
     { name: "Sandy", phone: "9846029184", address: "Nepal" },
     { name: "Dev", phone: "9856022105", address: "India" },
@@ -17,7 +20,7 @@ const App = () => {
   return (
     <>
       <div className="contact_adder">
-        <ContactAdder />
+        <ContactAdder onContactAdded = {addContactData} />
       </div>
       <div className="contact_list">
         <h3>Contact list:</h3>

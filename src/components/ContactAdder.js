@@ -1,12 +1,12 @@
 import { useState } from "react";
-const ContactAdder = () => {
+const ContactAdder = (props) => {
   const [name, setName] = useState("");
   const [mobile, setMobile] = useState("");
   const [location, setLocation] = useState("");
 
   const onClickHandler = () => {
     const contactData = { name: name, number: mobile, location: location};
-    console.log(contactData);
+    props.onContactAdded();
   };
   return (
     <>
