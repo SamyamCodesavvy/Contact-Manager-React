@@ -6,7 +6,7 @@ const ContactAdder = (props) => {
 
   const onClickHandler = () => {
     const contactData = { name: name, number: mobile, location: location};
-    props.onContactAdded();
+    props.onContactAdded(contactData);
   };
   return (
     <>

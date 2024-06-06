@@ -9,8 +9,8 @@ import Contact from "./components/Contact";
 import "./styles/app.css";
 import ContactAdder from "./components/ContactAdder";
 const App = () => {
-  const addContactData = () => {
-    alert("Parent called.");
+  const addContactData = (contactData) => {
+    console.log(contactData);
   };
   const contacts = [
     { name: "Sandy", phone: "9846029184", address: "Nepal" },
