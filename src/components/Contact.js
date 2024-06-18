@@ -4,9 +4,9 @@ const Contact = (props) => {
       <div className="contact">
         {props.data.name}
         <br />
-        {props.data.phone}
+        {props.data.mobile}
         <br />
-        {props.data.address}
+        {props.data.location}
         <br />
       </div>
       <hr />
