@@ -4,19 +4,19 @@
  * @returns The App component is being returned, which contains a container with a heading "Contact
  * list:" and three Contact components with different name, phone, and address props.
  */
-import React from "react";
+import React, { useState } from "react";
 import Contact from "./components/Contact";
 import "./styles/app.css";
 import ContactAdder from "./components/ContactAdder";
 const App = () => {
-  const contacts = [
-    { name: "Sandy", phone: "9846029184", address: "Nepal" },
-    { name: "Dev", phone: "9856022105", address: "India" },
-    { name: "Chris", phone: "9856733212", address: "Bhutan" }
+  const initialContacts = [
+    { name: "Sandy", mobile: "9846029184", location: "Nepal" },
+    { name: "Dev", mobile: "9856022105", location: "India" },
+    { name: "Chris", mobile: "9856733212", location: "Bhutan" }
   ];
+  const [contacts, setContacts] = useState(initialContacts)
   const addContactData = (contactData) => {
-    contacts.push(contactData);
-    console.log(contacts);
+    setContacts([contactData, ...contacts])
   };
   return (
     <>
@@ -31,6 +31,6 @@ const App = () => {
       </div>
     </>
   );
-};
+};  
 
 export default App;
