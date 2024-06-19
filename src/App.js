@@ -9,12 +9,7 @@ import Contact from "./components/Contact";
 import "./styles/app.css";
 import ContactAdder from "./components/ContactAdder";
 const App = () => {
-  const initialContacts = [
-    { name: "Sandy", mobile: "9846029184", location: "Nepal" },
-    { name: "Dev", mobile: "9856022105", location: "India" },
-    { name: "Chris", mobile: "9856733212", location: "Bhutan" }
-  ];
-  const [contacts, setContacts] = useState(initialContacts)
+  const [contacts, setContacts] = useState([])
   const addContactData = (contactData) => { 
     setContacts([contactData, ...contacts])
   };
