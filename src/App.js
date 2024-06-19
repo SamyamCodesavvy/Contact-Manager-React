@@ -23,7 +23,10 @@ const App = () => {
     alert(getData)
   };
   const removeData = () => {
-    localStorage.removeItem("name") //remove the ("name", "abcd") key value pair.
+    localStorage.removeItem("name"); //remove the ("name", "abcd") key value pair.
+  };
+  const clearData = () => {
+    localStorage.clear();
   };
 
   return (
@@ -40,6 +43,7 @@ const App = () => {
         <button onClick = {saveData}>Save Data</button>
         <button onClick = {getData}>Get Data</button>
         <button onClick = {removeData}>Remove Data</button>
+        <button onClick = {clearData}>Remove All Data</button> 
 
       </div>
     </>
