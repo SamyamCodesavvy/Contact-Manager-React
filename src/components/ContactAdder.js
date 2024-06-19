@@ -6,7 +6,7 @@ const ContactAdder = (props) => {
 
   const onClickHandler = () => {
     const contactData = { name: name, mobile: mobile, location: location};
-    props.onContactAdded(contactData);
+    props.onContactAdded(contactData); //child to parent communication (Start)
   };
   return (
     <>

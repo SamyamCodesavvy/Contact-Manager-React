@@ -15,7 +15,7 @@ const App = () => {
     { name: "Chris", mobile: "9856733212", location: "Bhutan" }
   ];
   const [contacts, setContacts] = useState(initialContacts)
-  const addContactData = (contactData) => {
+  const addContactData = (contactData) => { 
     setContacts([contactData, ...contacts])
   };
   return (
