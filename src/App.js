@@ -13,6 +13,12 @@ const App = () => {
   const addContactData = (contactData) => { 
     setContacts([contactData, ...contacts])
   };
+  const saveData = () => {
+    localStorage.setItem("name", "abcd") //(key,value) format
+  };
+
+  
+
   return (
     <>
       <div className="contact_adder">
@@ -23,6 +29,8 @@ const App = () => {
         {contacts.map(data=>(
           <Contact data = {data}></Contact>
         ))}
+
+        <button onClick = {saveData}>Save Data</button>
       </div>
     </>
   );
