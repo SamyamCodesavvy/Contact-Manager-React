@@ -14,15 +14,17 @@ const App = () => {
     setContacts([contactData, ...contacts])
   };
   const saveData = () => {
-    localStorage.setItem("name", "abcd") //(key,value) format
+    localStorage.setItem("name", "abcd"); //(key,value) format
+    localStorage.setItem("phone", 9856088867);
+    localStorage.setItem("location", "np");
   };
   const getData = () => {
     const getData = localStorage.getItem("name");
     alert(getData)
   };
-
-
-  
+  const removeData = () => {
+    localStorage.removeItem("name") //remove the ("name", "abcd") key value pair.
+  };
 
   return (
     <>
@@ -37,6 +39,8 @@ const App = () => {
 
         <button onClick = {saveData}>Save Data</button>
         <button onClick = {getData}>Get Data</button>
+        <button onClick = {removeData}>Remove Data</button>
+
       </div>
     </>
   );
