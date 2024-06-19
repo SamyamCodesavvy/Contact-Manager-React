@@ -16,6 +16,11 @@ const App = () => {
   const saveData = () => {
     localStorage.setItem("name", "abcd") //(key,value) format
   };
+  const getData = () => {
+    const getData = localStorage.getItem("name");
+    alert(getData)
+  };
+
 
   
 
@@ -31,6 +36,7 @@ const App = () => {
         ))}
 
         <button onClick = {saveData}>Save Data</button>
+        <button onClick = {getData}>Get Data</button>
       </div>
     </>
   );
